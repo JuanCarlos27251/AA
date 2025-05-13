@@ -1,0 +1,22 @@
+[
+  {
+    "Id": 1,
+    "IdUsuario": 4,
+    "IdMedico": 3,
+    "FechaCita": "2025-05-14T20:20:00",
+    "Motivo": "dolor",
+    "Confirmada": false,
+    "NombrePaciente": "juan",
+    "NombreMedico": "Dr. Fernandez Santos"
+  },
+  {
+    "Id": 2,
+    "IdUsuario": 2,
+    "IdMedico": 2,
+    "FechaCita": "2025-05-16T10:32:00",
+    "Motivo": "corazon",
+    "Confirmada": false,
+    "NombrePaciente": "Pepe",
+    "NombreMedico": "Dra. Martinez Ruiz"
+  }
+]

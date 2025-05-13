@@ -1,0 +1,15 @@
+C:\Users\Peque\Documents\EntornoServidor\AA\obj\Debug\net8.0\AA.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Peque\Documents\EntornoServidor\AA\obj\Debug\net8.0\AA.AssemblyInfoInputs.cache
+C:\Users\Peque\Documents\EntornoServidor\AA\obj\Debug\net8.0\AA.AssemblyInfo.cs
+C:\Users\Peque\Documents\EntornoServidor\AA\obj\Debug\net8.0\AA.csproj.CoreCompileInputs.cache
+C:\Users\Peque\Documents\EntornoServidor\AA\bin\Debug\net8.0\AA.exe
+C:\Users\Peque\Documents\EntornoServidor\AA\bin\Debug\net8.0\AA.deps.json
+C:\Users\Peque\Documents\EntornoServidor\AA\bin\Debug\net8.0\AA.runtimeconfig.json
+C:\Users\Peque\Documents\EntornoServidor\AA\bin\Debug\net8.0\AA.dll
+C:\Users\Peque\Documents\EntornoServidor\AA\bin\Debug\net8.0\AA.pdb
+C:\Users\Peque\Documents\EntornoServidor\AA\obj\Debug\net8.0\AA.dll
+C:\Users\Peque\Documents\EntornoServidor\AA\obj\Debug\net8.0\refint\AA.dll
+C:\Users\Peque\Documents\EntornoServidor\AA\obj\Debug\net8.0\AA.pdb
+C:\Users\Peque\Documents\EntornoServidor\AA\obj\Debug\net8.0\AA.genruntimeconfig.cache
+C:\Users\Peque\Documents\EntornoServidor\AA\obj\Debug\net8.0\ref\AA.dll
+C:\Users\Peque\Documents\EntornoServidor\AA\obj\Debug\net8.0\AA.sourcelink.json
