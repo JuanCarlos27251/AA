@@ -311,7 +311,6 @@ namespace AA
 
         private void Login()
         {
-            
             Console.WriteLine("=== Iniciar Sesión ===");
 
             Console.Write("Introduce tu nombre de usuario: ");
@@ -320,12 +319,22 @@ namespace AA
             Console.Write("Introduce tu contraseña: ");
             string contrasena = Console.ReadLine() ?? "";
 
+            // Obtener el usuario con las credenciales proporcionadas
             _usuarioActual = _usuarioService.ObtenerUsuarioPorCredenciales(nombre, contrasena);
 
             if (_usuarioActual != null)
             {
                 Console.WriteLine($"Bienvenido, {_usuarioActual.Nombre}!");
-                MenuPrivado();
+
+                // Verificar el rol del usuario
+                if (_usuarioActual.Rol != null && _usuarioActual.Rol.Equals("admin", StringComparison.OrdinalIgnoreCase))
+                {
+                    MenuAdmin(); // Ir al menú de administrador
+                }
+                else
+                {
+                    MenuPrivado(); // Ir al menú privado para usuarios normales
+                }
             }
             else
             {
@@ -413,6 +422,117 @@ namespace AA
 
                 PausarPantalla();
             } while (opcion != 5);
+        }
+
+        private void MenuAdmin()
+        {
+            int opcion;
+            do
+            {
+                
+                Console.WriteLine("=== Menú de Administrador ===");
+                Console.WriteLine("1 - Ver Citas");
+                Console.WriteLine("2 - Añadir Médico");
+                Console.WriteLine("3 - Borrar Médico");
+                Console.WriteLine("0 - Cerrar Sesión");
+                Console.Write("Selecciona una opción: ");
+
+                if (!int.TryParse(Console.ReadLine(), out opcion))
+                {
+                    MostrarError("Por favor selecciona una opción válida.");
+                    continue;
+                }
+
+                switch (opcion)
+                {
+                    case 1:
+                        MostrarCitas();
+                        break;
+                    case 2:
+                        AgregarMedico();
+                        break;
+                    case 3:
+                        BorrarMedico();
+                        break;
+                    case 0:
+                        _usuarioActual = null;
+                        Console.WriteLine("Has cerrado sesión.");
+                        return;
+                    default:
+                        MostrarError("Opción no válida.");
+                        break;
+                }
+
+                PausarPantalla();
+            } while (opcion != 0);
+        }
+
+        private void AgregarMedico()
+        {
+            
+            Console.WriteLine("=== Añadir Médico ===");
+
+            Console.Write("Introduce el nombre del médico: ");
+            string nombre = Console.ReadLine() ?? "";
+
+            Console.Write("Introduce la especialidad del médico: ");
+            string especialidad = Console.ReadLine() ?? "";
+
+            Console.Write("Introduce el email del médico: ");
+            string email = Console.ReadLine() ?? "";
+
+            Console.Write("Introduce el teléfono del médico: ");
+            string telefono = Console.ReadLine() ?? "";
+
+            var nuevoMedico = new Medico
+            {
+                Nombre = nombre,
+                Especialidad = especialidad,
+                Email = email,
+                Telefono = telefono,
+                Disponible = true
+            };
+
+            var medicos = _medicoService.ObtenerMedicos();
+            medicos.Add(nuevoMedico);
+            Console.WriteLine("¡Médico añadido con éxito!");
+        }
+
+        private void BorrarMedico()
+        {
+            
+            Console.WriteLine("=== Borrar Médico ===");
+
+            var medicos = _medicoService.ObtenerMedicos();
+            if (!medicos.Any())
+            {
+                Console.WriteLine("No hay médicos disponibles para borrar.");
+                return;
+            }
+
+            foreach (var medico in medicos)
+            {
+                Console.WriteLine($"ID: {medico.Id}, Nombre: {medico.Nombre}, Especialidad: {medico.Especialidad}");
+            }
+
+            Console.Write("Introduce el ID del médico que deseas borrar: ");
+            string id = Console.ReadLine() ?? "";
+
+            if (!int.TryParse(id, out int idInt))
+            {
+                MostrarError("ID inválido.");
+                return;
+            }
+            var medicoABorrar = medicos.FirstOrDefault(m => m.Id == idInt);
+            if (medicoABorrar == null)
+            {
+                MostrarError("No se encontró un médico con ese ID.");
+                return;
+            }
+
+            medicos.Remove(medicoABorrar);
+
+            Console.WriteLine("¡Médico borrado con éxito!");
         }
 
         private void MostrarInfoPersonal()

@@ -34,5 +34,14 @@
     "FechaRegistro": "2025-05-13T15:19:07.3008026+02:00",
     "Rol": "Paciente",
     "EstaActivo": true
+  },
+  {
+    "Id": 5,
+    "Nombre": "kaka",
+    "Email": "kaka@gmail.com",
+    "Contrasena": "123",
+    "FechaRegistro": "2025-05-13T18:50:16.9583612+02:00",
+    "Rol": "Paciente",
+    "EstaActivo": true
   }
 ]
