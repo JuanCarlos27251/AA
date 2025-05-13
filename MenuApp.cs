@@ -493,9 +493,12 @@ namespace AA
                 Disponible = true
             };
 
-            var medicos = _medicoService.ObtenerMedicos();
-            medicos.Add(nuevoMedico);
+            _medicoService.AgregarMedico(nuevoMedico);
             Console.WriteLine("¡Médico añadido con éxito!");
+
+            // var medicos = _medicoService.ObtenerMedicos();
+            // medicos.Add(nuevoMedico);
+            // Console.WriteLine("¡Médico añadido con éxito!");
         }
 
         private void BorrarMedico()
