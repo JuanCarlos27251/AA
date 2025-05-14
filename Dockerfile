@@ -1,5 +1,5 @@
 # Etapa de construcción
-FROM mcr.microsoft.com/dotnet/sdk:8.0 AS buildApp
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS buildapp
 WORKDIR /src
 COPY . .
 RUN dotnet publish "AA.csproj" -c Release -o /consoleapp
