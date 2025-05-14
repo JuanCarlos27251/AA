@@ -13,13 +13,21 @@ namespace AA.Services
         
         public JsonPersistenceService(string dataDirectory = "Data")
         {
-            _dataDirectory = dataDirectory;
-            
-            // Asegurar que el directorio de datos exista
-            if (!Directory.Exists(_dataDirectory))
-            {
-                Directory.CreateDirectory(_dataDirectory);
-            }
+            // Detectar si estamos en Docker
+        bool isDocker = Environment.GetEnvironmentVariable("DOTNET_RUNNING_IN_CONTAINER") == "true";
+        
+        // Establecer el directorio de datos según el entorno
+        _dataDirectory = isDocker 
+            ? "/app/data"  // Ruta en Docker
+            : Path.Combine(Directory.GetCurrentDirectory(), dataDirectory); // Ruta local
+        
+        Console.WriteLine($"Usando directorio de datos: {_dataDirectory}");
+        
+        if (!Directory.Exists(_dataDirectory))
+        {
+            Directory.CreateDirectory(_dataDirectory);
+            Console.WriteLine($"Directorio creado: {_dataDirectory}");
+        }
             
             _usuariosFile = Path.Combine(_dataDirectory, "usuarios.json");
             _medicosFile = Path.Combine(_dataDirectory, "medicos.json");

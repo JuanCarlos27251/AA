@@ -38,5 +38,15 @@
     "Confirmada": false,
     "NombrePaciente": "ere",
     "NombreMedico": "pepe"
+  },
+  {
+    "Id": 5,
+    "IdUsuario": 7,
+    "IdMedico": 8,
+    "FechaCita": "2025-08-20T10:00:00",
+    "Motivo": "qq",
+    "Confirmada": false,
+    "NombrePaciente": "qq",
+    "NombreMedico": "qq"
   }
 ]
