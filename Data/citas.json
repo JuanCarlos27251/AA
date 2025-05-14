@@ -18,5 +18,25 @@
     "Confirmada": false,
     "NombrePaciente": "Pepe",
     "NombreMedico": "Dra. Martinez Ruiz"
+  },
+  {
+    "Id": 3,
+    "IdUsuario": 5,
+    "IdMedico": 6,
+    "FechaCita": "2025-06-20T20:01:00",
+    "Motivo": "garganta",
+    "Confirmada": false,
+    "NombrePaciente": "kaka",
+    "NombreMedico": "lili"
+  },
+  {
+    "Id": 4,
+    "IdUsuario": 6,
+    "IdMedico": 4,
+    "FechaCita": "2025-05-20T12:02:00",
+    "Motivo": "ere",
+    "Confirmada": false,
+    "NombrePaciente": "ere",
+    "NombreMedico": "pepe"
   }
 ]

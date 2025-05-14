@@ -369,7 +369,8 @@ namespace AA
                 Email = email,
                 Contrasena = contrasena,
                 Rol = "Paciente",
-                EstaActivo = true
+                EstaActivo = true,
+                FechaRegistro = DateTime.Now
             };
 
             _usuarioService.AgregarUsuario(nuevoUsuario);

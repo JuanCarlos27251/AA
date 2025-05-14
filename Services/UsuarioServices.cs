@@ -97,9 +97,17 @@ namespace AA.Services
             }
         }
         
+        
         private void GuardarCambios()
         {
-            _persistenceService.GuardarUsuarios(usuarios);
+            try
+            {
+                _persistenceService.GuardarUsuarios(usuarios);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error al guardar los cambios: {ex.Message}");
+            }
         }
     }
 }

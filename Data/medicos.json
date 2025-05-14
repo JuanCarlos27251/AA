@@ -34,5 +34,32 @@
     "Telefono": "147147147",
     "FechaAlta": "2025-05-13T20:10:15.5512336+02:00",
     "Disponible": true
+  },
+  {
+    "Id": 5,
+    "Nombre": "lolo",
+    "Especialidad": "lolo",
+    "Email": "lolo",
+    "Telefono": "147147147",
+    "FechaAlta": "2025-05-14T12:30:13.1851496+02:00",
+    "Disponible": true
+  },
+  {
+    "Id": 6,
+    "Nombre": "lili",
+    "Especialidad": "lili",
+    "Email": "lili",
+    "Telefono": "123321123",
+    "FechaAlta": "2025-05-14T12:36:23.7904768+02:00",
+    "Disponible": true
+  },
+  {
+    "Id": 7,
+    "Nombre": "ere",
+    "Especialidad": "ere",
+    "Email": "ere",
+    "Telefono": "147741147",
+    "FechaAlta": "2025-05-14T12:46:02.9956032+02:00",
+    "Disponible": true
   }
 ]

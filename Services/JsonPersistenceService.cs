@@ -29,9 +29,23 @@ namespace AA.Services
         // Métodos para Usuarios
         public void GuardarUsuarios(List<Usuario> usuarios)
         {
-            var options = new JsonSerializerOptions { WriteIndented = true };
-            string jsonString = JsonSerializer.Serialize(usuarios, options);
-            File.WriteAllText(_usuariosFile, jsonString);
+            try
+            {
+                var options = new JsonSerializerOptions 
+                { 
+                    WriteIndented = true,
+                    PropertyNameCaseInsensitive = true
+                };
+                
+                string jsonString = JsonSerializer.Serialize(usuarios, options);
+                File.WriteAllText(_usuariosFile, jsonString);
+                Console.WriteLine($"Usuarios guardados correctamente en: {_usuariosFile}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error al guardar usuarios en JSON: {ex.Message}");
+                throw;
+            }
         }
         
         public List<Usuario> CargarUsuarios()
@@ -48,9 +62,21 @@ namespace AA.Services
         // Métodos para Médicos
         public void GuardarMedicos(List<Medico> medicos)
         {
-            var options = new JsonSerializerOptions { WriteIndented = true };
-            string jsonString = JsonSerializer.Serialize(medicos, options);
-            File.WriteAllText(_medicosFile, jsonString);
+            try
+            {
+                var options = new JsonSerializerOptions 
+                { 
+                    WriteIndented = true,
+                    PropertyNameCaseInsensitive = true
+                };
+                string jsonString = JsonSerializer.Serialize(medicos, options);
+                File.WriteAllText(_medicosFile, jsonString);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error al guardar médicos: {ex.Message}");
+                throw;
+            }
         }
         
         public List<Medico> CargarMedicos()
@@ -67,9 +93,21 @@ namespace AA.Services
         // Métodos para Citas
         public void GuardarCitas(List<Cita> citas)
         {
-            var options = new JsonSerializerOptions { WriteIndented = true };
-            string jsonString = JsonSerializer.Serialize(citas, options);
-            File.WriteAllText(_citasFile, jsonString);
+            try{
+                var options = new JsonSerializerOptions 
+                { 
+                    WriteIndented = true,
+                    PropertyNameCaseInsensitive = true
+                };
+                string jsonString = JsonSerializer.Serialize(citas, options);
+                File.WriteAllText(_citasFile, jsonString);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error al guardar citas: {ex.Message}");
+                throw;
+            }
+        
         }
         
         public List<Cita> CargarCitas()

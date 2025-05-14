@@ -66,19 +66,19 @@ namespace AA.Services
             medicos.Add(medico);
             GuardarCambios();
         }
-     public bool BorrarMedico(int id)
-    {
-        var medico = medicos.FirstOrDefault(m => m.Id == id);
-        if (medico != null)
+        public bool BorrarMedico(int id)
         {
-            medicos.Remove(medico);
-            GuardarCambios();
-            return true;
+            var medico = medicos.FirstOrDefault(m => m.Id == id);
+            if (medico != null)
+            {
+                medicos.Remove(medico);
+                GuardarCambios();
+                return true;
+            }
+            return false;
         }
-        return false;
-    }
+    
         
-
         public List<Medico> ObtenerMedicos()
         {
             return medicos;
@@ -111,7 +111,14 @@ namespace AA.Services
         
         private void GuardarCambios()
         {
-            _persistenceService.GuardarMedicos(medicos);
+            try
+            {
+                _persistenceService.GuardarMedicos(medicos);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error al guardar los cambios: {ex.Message}");
+            }
         }
     }
 }

@@ -62,9 +62,17 @@ namespace AA.Services
             return false;
         }
         
+        
         private void GuardarCambios()
         {
-            _persistenceService.GuardarCitas(citas);
+            try
+            {
+                _persistenceService.GuardarCitas(citas);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error al guardar los cambios: {ex.Message}");
+            }
         }
     }
 }
