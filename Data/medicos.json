@@ -28,47 +28,11 @@
   },
   {
     "Id": 4,
-    "Nombre": "pepe",
-    "Especialidad": "pepe",
-    "Email": "pepe",
-    "Telefono": "147147147",
-    "FechaAlta": "2025-05-13T20:10:15.5512336+02:00",
-    "Disponible": true
-  },
-  {
-    "Id": 5,
-    "Nombre": "lolo",
-    "Especialidad": "lolo",
-    "Email": "lolo",
-    "Telefono": "147147147",
-    "FechaAlta": "2025-05-14T12:30:13.1851496+02:00",
-    "Disponible": true
-  },
-  {
-    "Id": 6,
-    "Nombre": "lili",
-    "Especialidad": "lili",
-    "Email": "lili",
-    "Telefono": "123321123",
-    "FechaAlta": "2025-05-14T12:36:23.7904768+02:00",
-    "Disponible": true
-  },
-  {
-    "Id": 7,
-    "Nombre": "ere",
-    "Especialidad": "ere",
-    "Email": "ere",
-    "Telefono": "147741147",
-    "FechaAlta": "2025-05-14T12:46:02.9956032+02:00",
-    "Disponible": true
-  },
-  {
-    "Id": 8,
-    "Nombre": "qq",
-    "Especialidad": "qq",
-    "Email": "qq",
-    "Telefono": "12121212",
-    "FechaAlta": "2025-05-14T13:25:30.6084724+02:00",
+    "Nombre": "Dr. Juan Umberto",
+    "Especialidad": "Podologia",
+    "Email": "dr.umberto@gmail.com",
+    "Telefono": "978456585",
+    "FechaAlta": "2025-06-12T18:09:57.9698094+02:00",
     "Disponible": true
   }
 ]

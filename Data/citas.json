@@ -48,5 +48,15 @@
     "Confirmada": false,
     "NombrePaciente": "qq",
     "NombreMedico": "qq"
+  },
+  {
+    "Id": 6,
+    "IdUsuario": 2,
+    "IdMedico": 1,
+    "FechaCita": "2025-08-20T10:20:00",
+    "Motivo": "dolor",
+    "Confirmada": false,
+    "NombrePaciente": "Pepe",
+    "NombreMedico": "Dr. Garcia Lopez"
   }
 ]
