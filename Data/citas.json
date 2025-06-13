@@ -1,0 +1,62 @@
+[
+  {
+    "Id": 1,
+    "IdUsuario": 4,
+    "IdMedico": 3,
+    "FechaCita": "2025-05-14T20:20:00",
+    "Motivo": "dolor",
+    "Confirmada": false,
+    "NombrePaciente": "juan",
+    "NombreMedico": "Dr. Fernandez Santos"
+  },
+  {
+    "Id": 2,
+    "IdUsuario": 2,
+    "IdMedico": 2,
+    "FechaCita": "2025-05-16T10:32:00",
+    "Motivo": "corazon",
+    "Confirmada": false,
+    "NombrePaciente": "Pepe",
+    "NombreMedico": "Dra. Martinez Ruiz"
+  },
+  {
+    "Id": 3,
+    "IdUsuario": 5,
+    "IdMedico": 6,
+    "FechaCita": "2025-06-20T20:01:00",
+    "Motivo": "garganta",
+    "Confirmada": false,
+    "NombrePaciente": "kaka",
+    "NombreMedico": "lili"
+  },
+  {
+    "Id": 4,
+    "IdUsuario": 6,
+    "IdMedico": 4,
+    "FechaCita": "2025-05-20T12:02:00",
+    "Motivo": "ere",
+    "Confirmada": false,
+    "NombrePaciente": "ere",
+    "NombreMedico": "pepe"
+  },
+  {
+    "Id": 5,
+    "IdUsuario": 7,
+    "IdMedico": 8,
+    "FechaCita": "2025-08-20T10:00:00",
+    "Motivo": "qq",
+    "Confirmada": false,
+    "NombrePaciente": "qq",
+    "NombreMedico": "qq"
+  },
+  {
+    "Id": 6,
+    "IdUsuario": 2,
+    "IdMedico": 1,
+    "FechaCita": "2025-08-20T10:20:00",
+    "Motivo": "dolor",
+    "Confirmada": false,
+    "NombrePaciente": "Pepe",
+    "NombreMedico": "Dr. Garcia Lopez"
+  }
+]

@@ -1,0 +1,65 @@
+[
+  {
+    "Id": 1,
+    "Nombre": "admin",
+    "Email": "admin@gmail.com",
+    "Contrasena": "admin123",
+    "FechaRegistro": "2025-05-13T15:12:36.2905962+02:00",
+    "Rol": "Admin",
+    "EstaActivo": true
+  },
+  {
+    "Id": 2,
+    "Nombre": "Pepe",
+    "Email": "pepe@gmail.com",
+    "Contrasena": "123456",
+    "FechaRegistro": "2025-05-13T15:12:36.2906353+02:00",
+    "Rol": "Paciente",
+    "EstaActivo": true
+  },
+  {
+    "Id": 3,
+    "Nombre": "Maria",
+    "Email": "maria@gmail.com",
+    "Contrasena": "123456",
+    "FechaRegistro": "2025-05-13T15:12:36.2906357+02:00",
+    "Rol": "Paciente",
+    "EstaActivo": true
+  },
+  {
+    "Id": 4,
+    "Nombre": "juan",
+    "Email": "juan@gmail.com",
+    "Contrasena": "123456789",
+    "FechaRegistro": "2025-05-13T15:19:07.3008026+02:00",
+    "Rol": "Paciente",
+    "EstaActivo": true
+  },
+  {
+    "Id": 5,
+    "Nombre": "kaka",
+    "Email": "kaka@gmail.com",
+    "Contrasena": "123",
+    "FechaRegistro": "2025-05-13T18:50:16.9583612+02:00",
+    "Rol": "Paciente",
+    "EstaActivo": true
+  },
+  {
+    "Id": 6,
+    "Nombre": "ere",
+    "Email": "ere",
+    "Contrasena": "123",
+    "FechaRegistro": "2025-05-14T12:45:06.7249457+02:00",
+    "Rol": "Paciente",
+    "EstaActivo": true
+  },
+  {
+    "Id": 7,
+    "Nombre": "qq",
+    "Email": "qq",
+    "Contrasena": "123",
+    "FechaRegistro": "2025-05-14T13:25:43.4492614+02:00",
+    "Rol": "Paciente",
+    "EstaActivo": true
+  }
+]

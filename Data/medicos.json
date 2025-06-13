@@ -1,0 +1,38 @@
+[
+  {
+    "Id": 1,
+    "Nombre": "Dr. Garcia Lopez",
+    "Especialidad": "Medicina General",
+    "Email": "garcia@citasmedicas.com",
+    "Telefono": "600123456",
+    "FechaAlta": "2024-11-13T15:12:36.1767151+01:00",
+    "Disponible": true
+  },
+  {
+    "Id": 2,
+    "Nombre": "Dra. Martinez Ruiz",
+    "Especialidad": "Cardiologia",
+    "Email": "martinez@citasmedicas.com",
+    "Telefono": "600789012",
+    "FechaAlta": "2025-02-13T15:12:36.1872052+01:00",
+    "Disponible": true
+  },
+  {
+    "Id": 3,
+    "Nombre": "Dr. Fernandez Santos",
+    "Especialidad": "Pediatria",
+    "Email": "fernandez@citasmedicas.com",
+    "Telefono": "600345678",
+    "FechaAlta": "2025-04-13T15:12:36.1872084+02:00",
+    "Disponible": true
+  },
+  {
+    "Id": 4,
+    "Nombre": "Dr. Juan Umberto",
+    "Especialidad": "Podologia",
+    "Email": "dr.umberto@gmail.com",
+    "Telefono": "978456585",
+    "FechaAlta": "2025-06-12T18:09:57.9698094+02:00",
+    "Disponible": true
+  }
+]
